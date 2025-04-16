@@ -4,3 +4,11 @@ git add .
 git commit -m "Deploy inicial"
 git push -u origin master
 npm run deploy
+"homepage": "https://umbelinoneves.github.io/govinova-diagnostico",
+"scripts": {
+  "dev": "vite",
+  "build": "vite build",
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d dist"
+}
+
